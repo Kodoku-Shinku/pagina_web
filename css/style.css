@@ -452,3 +452,29 @@ footer {
 }
 
 /*** Animations ***/
+
+
+/*** Media queries ***/
+
+@media (max-width: 720px) {
+    .contact-section .form-row {
+        /* Cambiar a dirección de columna */
+        flex-direction: column;
+    }
+
+    .contact-section .form-row input,
+    .contact-section .form-row textarea {
+        /* Ancho completo del contenedor */
+        margin: 10px;
+        /* Eliminar margen horizontal */
+        margin-inline: 0;
+
+    }
+
+    .contact-section .form-row textarea {
+        /* Ajustar el ancho del textarea */
+        width: 300px;
+    }
+}
+
+/*** Media queries ***/
