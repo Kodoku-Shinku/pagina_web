@@ -1,63 +1,93 @@
 /*** Navbar ***/
 
+/* Estilos para la barra de navegación */
 nav {
+    /* Imagen de fondo */
     background-image: url("../img/background_art_anime.jpg");
+    /* Ajuste de tamaño de la imagen */
     background-size: cover;
+    /* Posición de la imagen en el centro */
     background-position: center;
 }
 
+/* Estilos para el menú */
 .menu {
+    /* Elimina los estilos de lista */
     list-style-type: none;
+    /* Mostrar los elementos en línea */
     display: flex;
+    /* Alinear los elementos al final del contenedor */
     justify-content: flex-end;
+    /* Centrar verticalmente los elementos */
     align-items: center;
+    /* Espacio interno del menú */
     padding: 10px;
+    /* Espacio derecho del menú */
     padding-right: 120px;
+    /* Eliminar margen */
     margin: 0;
 }
 
 .menu li {
+    /* Espacio horizontal entre elementos del menú */
     margin: 0 10px;
 }
 
 .menu li a {
+    /* Eliminar subrayado de los enlaces */
     text-decoration: none;
+    /* Color del texto */
     color: #fff;
 }
 
 .menu li a:hover {
+    /* Cambio de color al hacer hover en los enlaces del menú */
     color: red;
 }
 
 .menu li:hover {
+    /* Efecto de pulse-border al hacer hover en un elemento del menú */
     animation: pulse-border 2s infinite;
 }
 
 .centered-content {
+    /* Mostrar los elementos en línea */
     display: flex;
+    /* Alinear los elementos al centro horizontalmente */
     justify-content: center;
+    /* Centrar verticalmente los elementos */
     align-items: center;
+    /* Altura del contenido centrado */
     height: 320px;
 }
 
 .centered-content div:hover {
+    /* Cambio de color al hacer hover en el contenido centrado */
     color: red;
+    /* Agregando un outline al hacer hover en el contenido centrado */
     outline: 1px solid red;
 }
 
 .content-outline {
+    /* Color del texto */
     color: #fff;
+    /* Agregando un outline */
     outline: 1px solid #fff;
+    /* Espacio interno del contenido */
     padding: 5px 30px 5px 30px;
+    /* Alinear el texto al centro */
     text-align: center;
+
 }
 
 .content-outline p,
 h1 {
+    /* Eliminar margen */
     margin: 0;
 }
 
 .content-outline h1 {
+    /* Tamaño de fuente del encabezado */
     font-size: 28px;
 }
 
@@ -66,35 +96,56 @@ h1 {
 
 /*** Image Profile ***/
 
+/* Estilos para la imagen de perfil circular */
 .circle-image {
+    /* Posición relativa */
     position: relative;
+    /* Mostrar los elementos en línea */
     display: flex;
+    /* Alinear los elementos al centro horizontalmente */
     justify-content: center;
+    /* Centrar verticalmente los elementos */
     align-items: center;
+    /* Margen superior negativo para ajustar la posición */
     margin-top: -70px;
 }
 
 .circle-image::before {
+    /* Se pone el tipo de content cada que se usa el before */
     content: normal;
+    /* Posición absoluta */
     position: absolute;
+    /* Alinear en el centro vertical */
     top: 50%;
+    /* Alinear a la izquierda */
     left: 0;
+    /* Ancho del elemento */
     width: 100%;
+    /* Altura del elemento */
     height: 50%;
+    /* Color de fondo */
     background-color: #f2f2f2;
+    /* Radio de borde */
     border-radius: 50% 50% 0 0;
+    /*Índice de apilamiento para colocar el elemento detrás de la imagen */
     z-index: -1;
 }
 
 .circle-image img {
+    /* Ancho de la imagen */
     width: 150px;
+    /* Altura de la imagen */
     height: 150px;
+    /* Ajuste del contenido de la imagen */
     object-fit: cover;
+    /* Radio de borde para hacerla circular */
     border-radius: 50%;
+    /* Borde con color blanco */
     border: 3px solid #fff;
 }
 
 .circle-image img:hover {
+    /* Efecto de glow al hacer hover en la imagen */
     animation: glow 3s infinite;
 }
 
@@ -103,18 +154,25 @@ h1 {
 
 /*** About Section ***/
 
+/* Estilos para la sección Acerca de */
 .about-section {
+    /* Alinear el texto al centro */
     text-align: center;
+    /* Margen superior */
     margin-top: 20px;
 }
 
 .about-section h2 {
+    /* Tamaño de fuente del encabezado */
     font-size: 24px;
+    /* Margen inferior */
     margin-bottom: 10px;
 }
 
 .about-section p {
+    /* Tamaño de fuente del texto */
     font-size: 16px;
+    /* Altura de línea */
     line-height: 1;
 }
 
@@ -123,35 +181,50 @@ h1 {
 
 /*** Works Section ***/
 
+/* Estilos para la sección Trabajos */
 .works-section {
+    /* Color de fondo */
     background-color: #f2f2f2;
+    /* Alinear el texto al centro */
     text-align: center;
+    /* Espacio interno */
     padding: 20px;
+    /* Margen superior */
     margin-top: 20px;
 }
 
 .work-item {
+    /* Mostrar los elementos en línea */
     display: inline-block;
+    /* Alinear verticalmente arriba */
     vertical-align: top;
+    /* Margen entre elementos */
     margin: 10px;
 }
 
 .work-item img {
+    /* Ancho de la imagen */
     width: 200px;
+    /* Altura de la imagen */
     height: 200px;
+    /* Ajuste del contenido de la imagen */
     object-fit: cover;
 }
 
 .work-item img:hover {
+    /* Efecto de pulse al hacer hover en las imágenes de los trabajos */
     animation: pulse 0.5s;
 }
 
 .work-item h4 {
+    /* Margen superior */
     margin-top: 10px;
+    /* Margen inferior */
     margin-bottom: 10px;
 }
 
 .work-item p {
+    /* Margen superior e inferior */
     margin: 5px 0;
 }
 
@@ -160,53 +233,76 @@ h1 {
 
 /*** Contact Section ***/
 
+/* Estilos para la sección de Contacto */
 .contact-section {
+    /* Margen superior */
     margin-top: 20px;
 }
 
 .contact-section h2 {
+    /* Color del texto */
     color: rgb(91, 126, 224);
+    /* Alinear el texto al centro */
     text-align: center;
+    /* Espacio interno del título */
     padding: 20px 0px 20px 0px;
 }
 
 .contact-section form {
+    /* Mostrar los elementos en línea */
     display: flex;
+    /* Dirección de columna */
     flex-direction: column;
+    /* Centrar verticalmente los elementos */
     align-items: center;
 }
 
 .contact-section .form-row {
+    /* Mostrar los elementos en línea */
     display: flex;
+    /* Alinear los elementos al centro horizontalmente */
     justify-content: center;
+    /* Margen inferior */
     margin-bottom: 20px;
 }
 
 .contact-section .form-row input {
+    /* Margen horizontal entre elementos */
     margin-inline: 10px;
 }
 
 .contact-section .form-row input,
 .contact-section .form-row textarea {
+    /* Ancho de los campos de entrada */
     width: 300px;
+    /* Espacio interno */
     padding: 10px;
 }
 
 .contact-section .form-row textarea {
+    /* Ancho del área de texto */
     width: 645px;
+    /* Altura del área de texto */
     height: 100px;
 }
 
 .contact-section .form-row button {
+    /* Color de fondo del botón */
     background-color: blue;
+    /* Color del texto del botón */
     color: white;
+    /* Espacio interno del botón */
     padding: 10px 30px;
+    /* Eliminar borde */
     border: none;
+    /* Cambiar el cursor al pasar por encima */
     cursor: pointer;
 }
 
 .contact-section .form-row button:hover {
+    /* Cambio de color de fondo al hacer hover en el botón */
     background-color: darkblue;
+    /* Efecto de bounce al hacer hover en el botón */
     animation: bounce 1s;
 }
 
@@ -215,30 +311,46 @@ h1 {
 
 /*** Footer Section ***/
 
+/* Estilos para la sección del footer */
 footer {
+    /* Color de fondo */
     background-color: black;
+    /* Color del texto */
     color: white;
+    /* Espacio interno */
     padding: 20px 0;
+    /* Alinear el texto al centro */
     text-align: center;
 }
 
 .social-icons {
+    /* Mostrar los elementos en línea */
     display: flex;
+    /* Alinear los elementos al centro horizontalmente */
     justify-content: center;
+    /* Centrar verticalmente los elementos */
     align-items: center;
+    /* Espacio superior */
     padding-top: 25px;
 }
 
 .social-icons a {
+    /* Color del texto */
     color: white;
+    /* Tamaño de fuente */
     font-size: 24px;
+    /* Margen entre elementos */
     margin: 0 10px;
+    /* Espacio interno */
     padding: 0px 10px 0px 10px;
+    /* Eliminar subrayado */
     text-decoration: none;
 }
 
 .social-icons a:hover i {
+    /* Cambio de color al hacer hover en los iconos */
     color: blue;
+    /* Efecto de shake al hacer hover en los iconos */
     animation: shake_horizontal 0.5s;
 }
 
@@ -247,6 +359,7 @@ footer {
 
 /*** Animations ***/
 
+/* Keyframes para las animaciones */
 @keyframes shake_horizontal {
     0% {
         transform: translateX(0);
